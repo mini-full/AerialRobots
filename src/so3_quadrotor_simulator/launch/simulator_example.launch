@@ -46,10 +46,10 @@
      <param name="use_external_yaw "      value="false"/>
      <param name="gains/kx/x" value="1.0"/>
      <param name="gains/kx/y" value="1.0"/>
-     <param name="gains/kx/z" value="1.0"/>    
-     <param name="gains/kv/x" value="1.0"/>
-     <param name="gains/kv/y" value="1.0"/>
-     <param name="gains/kv/z" value="1.0"/>        
+     <param name="gains/kx/z" value="2.4"/>    
+     <param name="gains/kv/x" value="1.4"/>
+     <param name="gains/kv/y" value="2.3"/>
+     <param name="gains/kv/z" value="24"/>        
    </node>  
 
  

@@ -53,9 +53,9 @@ LinearControl::calculateControl(const Desired_State_t &des,
   std::cout << pitch << "pitch" << std:: endl;
 
   Eigen::Vector3d eulerAngle(roll, pitch, 0);
-  Eigen::AngleAxisd rollAngle(Eigen::AngleAxisd(eulerAngle(2),Eigen::Vector3d::UnitX()));
+  Eigen::AngleAxisd rollAngle(Eigen::AngleAxisd(eulerAngle(0),Eigen::Vector3d::UnitX()));
   Eigen::AngleAxisd pitchAngle(Eigen::AngleAxisd(eulerAngle(1),Eigen::Vector3d::UnitY()));
-  Eigen::AngleAxisd yawAngle(Eigen::AngleAxisd(eulerAngle(0),Eigen::Vector3d::UnitZ()));
+  Eigen::AngleAxisd yawAngle(Eigen::AngleAxisd(eulerAngle(2),Eigen::Vector3d::UnitZ()));
 
   u.q = yawAngle*pitchAngle*rollAngle;
  
